@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir ~/.local/share/firefox/firefox-esr
+mkdir -p ~/.local/share/firefox/firefox-esr
 cd ~/.local/share/firefox/firefox-esr
 
 echo "#!/bin/sh
