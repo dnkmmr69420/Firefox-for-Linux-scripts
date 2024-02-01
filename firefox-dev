@@ -123,17 +123,17 @@ rm -R -f ~/.local/share/applications/firefox-dev.desktop
 echo "[Desktop Entry]
 Name=Firefox Developer Edition
 Comment=Web Browser
-Exec=~/.local/share/firefox/firefox-dev/firefox %u
+Exec=$HOME/.local/share/firefox/firefox-dev/firefox %u
 Terminal=false
 Type=Application
-Icon=~/.local/share/firefox/firefox-dev/browser/chrome/icons/default/default128.png
+Icon=$HOME/.local/share/firefox/firefox-dev/browser/chrome/icons/default/default128.png
 Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
 Actions=Private;
 
 [Desktop Action Private]
-Exec=~/.local/share/firefox/firefox-dev/firefox --private-window %u
+Exec=$HOME/.local/share/firefox/firefox-dev/firefox --private-window %u
 Name=Open in private mode"  >> ~/.local/share/applications/firefox-dev.desktop
 
 echo "";
