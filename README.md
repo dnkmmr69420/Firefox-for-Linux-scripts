@@ -9,29 +9,29 @@ Pick a version then run it in the terminal
 ### Regular
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox | sh
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox && chmod +x ./firefox && ./firefox
 ```
 
 ### Beta
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-beta | sh
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-beta && chmod +x ./firefox && ./firefox
 ```
 
 ### Dev
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-dev | sh
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-dev && chmod +x ./firefox && ./firefox
 ```
 
 ### ESR
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-esr | sh
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-esr && chmod +x ./firefox && ./firefox
 ```
 
 ### Nightly
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-nightly | bash
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-nightly && chmod +x ./firefox && ./firefox
 ```
