@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir ~/.local/share/firefox/firefox-nightly
+mkdir -p ~/.local/share/firefox/firefox-nightly
 cd ~/.local/share/firefox/firefox-nightly
 
 echo "#!/bin/sh
