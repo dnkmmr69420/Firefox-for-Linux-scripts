@@ -15,23 +15,23 @@ wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/mai
 ### Beta
 
 ```bash
-wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-beta && chmod +x ./firefox && ./firefox
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-beta && chmod +x ./firefox-beta && ./firefox-beta
 ```
 
 ### Dev
 
 ```bash
-wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-dev && chmod +x ./firefox && ./firefox
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-dev && chmod +x ./firefox-dev && ./firefox-dev
 ```
 
 ### ESR
 
 ```bash
-wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-esr && chmod +x ./firefox && ./firefox
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-esr && chmod +x ./firefox-esr && ./firefox-esr
 ```
 
 ### Nightly
 
 ```bash
-wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-nightly && chmod +x ./firefox && ./firefox
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-nightly && chmod +x ./firefox-nightly && ./firefox-nightly
 ```
