@@ -9,31 +9,31 @@ Pick a version then run it in the terminal
 ### Regular
 
 ```bash
-wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox && chmod +x ./firefox && ./firefox
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox && chmod +x ./firefox && ./firefox ; rm -f ./firefox
 ```
 
 ### Beta
 
 ```bash
-wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-beta && chmod +x ./firefox-beta && ./firefox-beta
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-beta && chmod +x ./firefox-beta && ./firefox-beta ; rm -f ./firefox-beta
 ```
 
 ### Dev
 
 ```bash
-wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-dev && chmod +x ./firefox-dev && ./firefox-dev
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-dev && chmod +x ./firefox-dev && ./firefox-dev ; rm -f ./firefox-dev
 ```
 
 ### ESR
 
 ```bash
-wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-esr && chmod +x ./firefox-esr && ./firefox-esr
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-esr && chmod +x ./firefox-esr && ./firefox-esr ; rm -f ./firefox-esr
 ```
 
 ### Nightly
 
 ```bash
-wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-nightly && chmod +x ./firefox-nightly && ./firefox-nightly
+wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-nightly && chmod +x ./firefox-nightly && ./firefox-nightly ; rm -f ./firefox-nightly
 ```
 
 ## Dependencies
