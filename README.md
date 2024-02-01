@@ -35,3 +35,13 @@ wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/mai
 ```bash
 wget https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-nightly && chmod +x ./firefox-nightly && ./firefox-nightly
 ```
+
+## Dependencies
+
+wget (static binary if wget is not preinstalled https://github.com/yunchih/static-binaries/blob/master/wget)
+glibc 2.17 or higher
+GTK+ 3.14 or higher
+libglib 2.42 or higher
+libstdc++ 4.8.1 or higher
+X.Org 1.0 or higher (1.7 or higher is recommended)
+
