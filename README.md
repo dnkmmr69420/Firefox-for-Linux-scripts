@@ -9,25 +9,25 @@ Pick a version then run it in the terminal
 ### Regular
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox | bash
+curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox | sh
 ```
 
 ### Beta
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-beta | bash
+curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-beta | sh
 ```
 
 ### Dev
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-dev | bash
+curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-dev | sh
 ```
 
 ### ESR
 
 ```bash
-curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-esr | bash
+curl -s https://raw.githubusercontent.com/dnkmmr69420/Firefox-for-Linux-scripts/main/firefox-esr | sh
 ```
 
 ### Nightly
