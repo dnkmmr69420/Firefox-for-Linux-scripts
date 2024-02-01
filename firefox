@@ -1,11 +1,11 @@
 #!/bin/sh
 
-mkdir ~/.local/share/firefox
-cd ~/.local/share/firefox
+mkdir ~/.local/share/firefox/firefox
+cd ~/.local/share/firefox/firefox
 
 echo "#!/bin/sh
-rm -R -f  ~/.local/share/firefox ~/.local/share/applications/firefox-stable.desktop ~/.local/bin/firefox" >> ~/.local/share/firefox/remove
-chmod +x ~/.local/share/firefox/remove
+rm -R -f  ~/.local/share/firefox/firefox ~/.local/share/applications/firefox-stable.desktop ~/.local/bin/firefox" >> ~/.local/share/firefox/firefox/remove
+chmod +x ~/.local/share/firefox/firefox/remove
 
 mkdir tmp;
 cd ./tmp;
@@ -107,7 +107,7 @@ read -r -p "(Default: en-US) Type the language: " response
 	case $response in
 	''|'ach'|'af'|'sq'|'ar'|'an'|'hy-AM'|'as'|'ast'|'az'|'eu'|'be'|'bn-BD'|'bn-IN'|'bs'|'br'|'bg'|'ca'|'zh-CN'|'zh-TW'|'hr'|'cs'|'da'|'nl'|'en-GB'|'en-ZA'|'en-US'|'eo'|'et'|'fi'|'fr'|'fy-NL'|'ff'|'gd'|'gl'|'de'|'el'|'gu-IN'|'he'|'hi-IN'|'hu'|'is'|'id'|'ga-IE'|'it'|'kn'|'kk'|'km'|'ko'|'lv'|'lij'|'lt'|'dsb'|'mk'|'mai'|'ms'|'ml'|'mr'|'nb-NO'|'nn-NO'|'or'|'fa'|'pl'|'pt-BR'|'pt-PT'|'pa-IN'|'ro'|'rm'|'ru'|'sr'|'si'|'sk'|'sl'|'son'|'es-AR'|'es-CL'|'es-MX'|'es-ES'|'sv-SE'|'ta'|'te'|'th'|'tr'|'uk'|'hsb'|'uz'|'vi'|'cy'|'xh')
 		wget "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=$response" --trust-server-names;;
-	*) rm -R -f ~/.local/share/firefox && echo " $response is not a valid language code, installation aborted!"; exit;;
+	*) rm -R -f ~/.local/share/firefox/firefox && echo " $response is not a valid language code, installation aborted!"; exit;;
 esac
 tar fx firefox-*.tar.bz2
 cd ..
@@ -115,9 +115,9 @@ mv ./tmp/firefox/* ./
 rm -R ./tmp
 
 currentuser=$(who | awk '{print $1}')
-chown -R $currentuser ~/.local/share/firefox
+chown -R $currentuser ~/.local/share/firefox/firefox
 
-ln -s ~/.local/share/firefox/firefox ~/.local/bin/firefox
+ln -s ~/.local/share/firefox/firefox/firefox ~/.local/bin/firefox
 
 rm -R -f  ~/.local/share/applications/firefox-stable.desktop
 echo "[Desktop Entry]
@@ -165,10 +165,10 @@ Comment[pt]=Navegue na Internet
 Comment[pt_BR]=Navegue na Internet
 Comment[sk]=Prehliadanie internetu
 Comment[sv]=Surfa på webben
-Exec=~/.local/share/firefox/firefox %u
+Exec=~/.local/share/firefox/firefox/firefox %u
 Terminal=false
 Type=Application
-Icon=~/.local/share/firefox/browser/chrome/icons/default/default128.png
+Icon=~/.local/share/firefox/firefox/browser/chrome/icons/default/default128.png
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
 Categories=Network;WebBrowser;
@@ -176,7 +176,7 @@ Keywords=web;browser;internet;
 Actions=new-window;new-private-window;profile-manager-window;
 
 [Desktop Action Private]
-Exec=~/.local/share/firefox/firefox --private-window %u
+Exec=~/.local/share/firefox/firefox/firefox --private-window %u
 Name=Open a New Private Window
 Name[ach]=Dirica manyen me mung
 Name[af]=Nuwe privaatvenster
