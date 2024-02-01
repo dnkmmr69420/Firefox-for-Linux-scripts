@@ -123,17 +123,17 @@ rm -R -f ~/.local/share/applications/firefox-nightly.desktop
 echo "[Desktop Entry]
 Name=Firefox Nightly
 Comment=Web Browser
-Exec=~/.local/share/firefox/firefox-nightly/firefox %u
+Exec=$HOME/.local/share/firefox/firefox-nightly/firefox %u
 Terminal=false
 Type=Application
-Icon=~/.local/share/firefox/firefox-nightly/browser/chrome/icons/default/default128.png
+Icon=$HOME/.local/share/firefox/firefox-nightly/browser/chrome/icons/default/default128.png
 Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
 Actions=Private;
 
 [Desktop Action Private]
-Exec=~/.local/share/firefox/firefox-nightly/firefox --private-window %u
+Exec=$HOME/.local/share/firefox/firefox-nightly/firefox --private-window %u
 Name=Open in private mode"  >> ~/.local/share/applications/firefox-nightly.desktop
 
 echo "";
