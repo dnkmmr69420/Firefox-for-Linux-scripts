@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "Setting Up..."
+
 mkdir -p ~/.local/share/firefox/firefox-esr
 cd ~/.local/share/firefox/firefox-esr
 
@@ -109,10 +111,13 @@ read -r -p "(Default: en-US) Type the language: " response
 		wget "https://download.mozilla.org/?product=firefox-esr-latest&os=linux64&lang=$response" --trust-server-names;;
 	*) rm -R -f ~/.local/share/firefox/firefox-esr && echo " $response is not a valid language code, installation aborted!"; exit;;
 esac
+echo "Extracting Archive..."
 tar fx firefox-*.tar.bz2
 cd ..
 mv ./tmp/firefox/* ./
 rm -R ./tmp
+
+echo "Finnishing Up..."
 
 currentuser=$(who | awk '{print $1}')
 chown -R $currentuser ~/.local/share/firefox/firefox-esr
