@@ -121,7 +121,6 @@ ln -s ~/.local/share/firefox/firefox/firefox ~/.local/bin/firefox
 
 rm -R -f  ~/.local/share/applications/firefox-stable.desktop
 echo "[Desktop Entry]
-[Desktop Entry]
 Version=1.0
 Name=Firefox
 GenericName=Web Browser
