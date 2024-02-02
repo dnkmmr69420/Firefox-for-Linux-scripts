@@ -109,6 +109,7 @@ read -r -p "(Default: en-US) Type the language: " response
 		wget "https://download.mozilla.org/?product=firefox-beta-latest&os=linux64&lang=$response" --trust-server-names;;
 	*) rm -R -f ~/.local/share/firefox/firefox-beta && echo " $response is not a valid language code, installation aborted!"; exit;;
 esac
+echo "Extracting Archive..."
 tar fx firefox-*.tar.bz2
 cd ..
 mv ./tmp/firefox/* ./
