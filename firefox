@@ -115,6 +115,8 @@ cd ..
 mv ./tmp/firefox/* ./
 rm -R ./tmp
 
+echo "Finnishing Up..."
+
 currentuser=$(who | awk '{print $1}')
 chown -R $currentuser ~/.local/share/firefox/firefox
 
