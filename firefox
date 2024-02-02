@@ -174,6 +174,106 @@ Categories=Network;WebBrowser;
 Keywords=web;browser;internet;
 Actions=new-window;new-private-window;profile-manager-window;
 
+[Desktop Action new-window]
+Name=Open a New Window
+Name[ach]=Dirica manyen
+Name[af]=Nuwe venster
+Name[an]=Nueva finestra
+Name[ar]=نافذة جديدة
+Name[as]=নতুন উইন্ডোName[ast]=Ventana nueva
+Name[az]=Yeni Pəncərə
+Name[be]=Новае акно
+Name[bg]=Нов прозорец
+Name[bn_BD]=নতুন উইন্ডো (N)
+Name[bn_IN]=নতুন উইন্ডোName[br]=Prenestr nevez
+Name[brx]=गोदान उइन्ड'(N)
+Name[bs]=Novi prozor
+Name[ca]=Finestra nova
+Name[cak]=K'ak'a' tzuwäch
+Name[cs]=Nové okno
+Name[cy]=Ffenestr Newydd
+Name[da]=Nyt vindue
+Name[de]=Neues Fenster
+Name[dsb]=Nowe wokno
+Name[el]=Νέο παράθυρο
+Name[en_GB]=New Window
+Name[en_US]=New Window
+Name[en_ZA]=New Window
+Name[eo]=Nova fenestro
+Name[es_AR]=Nueva ventana
+Name[es_CL]=Nueva ventana
+Name[es_ES]=Nueva ventana
+Name[es_MX]=Nueva ventana
+Name[et]=Uus aken
+Name[eu]=Leiho berria
+Name[fa]=پنجره جدید‌
+Name[ff]=Henorde Hesere
+Name[fi]=Uusi ikkuna
+Name[fr]=Nouvelle fenêtre
+Name[fy_NL]=Nij finster
+Name[ga_IE]=Fuinneog Nua
+Name[gd]=Uinneag ùr
+Name[gl]=Nova xanela
+Name[gn]=Ovetã pyahu
+Name[gu_IN]=નવી વિન્ડોName[he]=חלון חדש
+Name[hi_IN]=नया विंडोName[hr]=Novi prozor
+Name[hsb]=Nowe wokno
+Name[hu]=Új ablak
+Name[hy_AM]=Նոր Պատուհան
+Name[id]=Jendela Baru
+Name[is]=Nýr gluggi
+Name[it]=Nuova finestra
+Name[ja]=新しいウィンドウ
+Name[ja_JP]=新規ウインドウ
+Name[ka]=ახალი ფანჯარა
+Name[kk]=Жаңа терезе
+Name[km]=បង្អួច​​​ថ្មីе
+Name[kn]=ಹೊಸ ಕಿಟಕಿ
+Name[ko]=새 창
+Name[kok]=नवें जनेल
+Name[ks]=نئئ وِنڈو
+Name[lij]=Neuvo barcon
+Name[lo]=ຫນ້າຕ່າງໃຫມ່
+Name[lt]=Naujas langas
+Name[ltg]=Jauns lūgs
+Name[lv]=Jauns logs
+Name[mai]=नव विंडोName[mk]=Нов прозорец
+Name[ml]=പുതിയ ജാലകംName[mr]=नवीन पटल
+Name[ms]=Tetingkap Baru
+Name[my]=ဝင်းအသစ်k
+Name[nb_NO]=Nytt vindu
+Name[ne_NP]=नयाँ सञ्झ्याल
+Name[nl]=Nieuw venster
+Name[nn_NO]=Nytt vindauge
+Name[or]=ନୂତନ ୱିଣ୍ଡୋName[pa_IN]=ਨਵੀਂ ਵਿੰਡੋ
+Name[pl]=Nowe okno
+Name[pt_BR]=Nova janela
+Name[pt_PT]=Nova janela
+Name[rm]=Nova fanestra
+Name[ro]=Fereastră nouă
+Name[ru]=Новое окно
+Name[sat]=नावा विंडो (N)
+Name[si]=නව කවුළුවක්
+Name[sk]=Nové okno
+Name[sl]=Novo okno
+Name[son]=Zanfun taaga
+Name[sq]=Dritare e Re
+Name[sr]=Нови прозор
+Name[sv_SE]=Nytt fönster
+Name[ta]=புதிய சாளரம்s
+Name[te]=కొత్త వింசாName[th]=หน้าต่างใหม่
+Name[tr]=Yeni pencere
+Name[tsz]=Eraatarakua jimpani
+Name[uk]=Нове вікно
+Name[ur]=نیا دریچہ
+Name[uz]=Yangi oyna
+Name[vi]=Cửa sổ mới
+Name[wo]=Palanteer bu bees
+Name[xh]=Ifestile entsha
+Name[zh_CN]=新建窗口
+Name[zh_TW]=開新視窗
+Exec=$HOME/.local/share/firefox/firefox/firefox --new-window %u
+
 [Desktop Action new-private-window]
 Exec=$HOME/.local/share/firefox/firefox/firefox --private-window %u
 Name=Open a New Private Window
@@ -280,7 +380,15 @@ Name[vi]=Cửa sổ riêng tư mới
 Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh-CN]=新建隐私浏览窗口
-Name[zh-TW]=新增隱私視窗"  >> ~/.local/share/applications/firefox-stable.desktop
+Name[zh-TW]=新增隱私視窗
+
+[Desktop Action profile-manager-window]
+Name=Open the Profile Manager
+Name[cs]=Správa profilů
+Name[de]=Profilverwaltung öffnen
+Name[es]=Abrir el Gestor de Perfiles
+Name[fr]=Ouvrir le gestionnaire de profils
+Exec=$HOME/.local/share/firefox/firefox/firefox--ProfileManager"  >> ~/.local/share/applications/firefox-stable.desktop
 
 echo "";
 echo " Firefox Stable has been installed! ";
