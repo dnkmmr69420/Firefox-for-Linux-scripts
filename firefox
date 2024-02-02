@@ -388,7 +388,7 @@ Name[cs]=Správa profilů
 Name[de]=Profilverwaltung öffnen
 Name[es]=Abrir el Gestor de Perfiles
 Name[fr]=Ouvrir le gestionnaire de profils
-Exec=$HOME/.local/share/firefox/firefox/firefox--ProfileManager"  >> ~/.local/share/applications/firefox-stable.desktop
+Exec=$HOME/.local/share/firefox/firefox/firefox --ProfileManager"  >> ~/.local/share/applications/firefox-stable.desktop
 
 echo "";
 echo " Firefox Stable has been installed! ";
