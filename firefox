@@ -174,7 +174,7 @@ Categories=Network;WebBrowser;
 Keywords=web;browser;internet;
 Actions=new-window;new-private-window;profile-manager-window;
 
-[Desktop Action Private]
+[Desktop Action new-private-window]
 Exec=$HOME/.local/share/firefox/firefox/firefox --private-window %u
 Name=Open a New Private Window
 Name[ach]=Dirica manyen me mung
