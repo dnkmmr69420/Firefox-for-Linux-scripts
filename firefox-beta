@@ -3,6 +3,8 @@
 echo "Setting Up..."
 
 mkdir -p ~/.local/share/firefox/firefox-beta
+mkdir -p ~/.local/share/applications
+mkdir -p ~/.local/bin
 cd ~/.local/share/firefox/firefox-beta
 
 echo "#!/bin/sh
