@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "Setting Up..."
+
 mkdir -p ~/.local/share/firefox/firefox-dev
 cd ~/.local/share/firefox/firefox-dev
 
