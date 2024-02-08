@@ -2,6 +2,7 @@
 
 echo "Setting Up..."
 
+
 mkdir -p ~/.local/share/firefox/tor
 mkdir -p ~/.local/share/applications
 mkdir -p ~/.local/bin
@@ -13,3 +14,11 @@ chmod +x ~/.local/share/firefox/tor/remove
 
 
 wget https://www.torproject.org/dist/torbrowser/13.0.9/tor-browser-linux-x86_64-13.0.9.tar.xz
+
+echo "Extracting Archive..."
+tar fx tor-*.tar.xz
+cd ..
+mv ./tmp/tor-browser/Browser/* ./
+rm -R ./tmp
+
+ln -s ~/.local/share/firefox/tor/firefox ~/.local/bin/tor-browser
