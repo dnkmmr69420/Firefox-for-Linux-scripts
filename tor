@@ -1,8 +1,15 @@
 #!/bin/sh
 
+echo "Setting Up..."
+
 mkdir -p ~/.local/share/firefox/tor
 mkdir -p ~/.local/share/applications
 mkdir -p ~/.local/bin
 cd ~/.local/share/firefox/tor
+
+echo "#!/bin/sh
+rm -R -f  ~/.local/share/firefox/tor ~/.local/share/applications/tor-stable.desktop ~/.local/bin/tor" >> ~/.local/share/firefox/tor/remove
+chmod +x ~/.local/share/firefox/tor/remove
+
 
 wget https://www.torproject.org/dist/torbrowser/13.0.9/tor-browser-linux-x86_64-13.0.9.tar.xz
