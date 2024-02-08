@@ -1,0 +1,8 @@
+#!/bin/sh
+
+mkdir -p ~/.local/share/firefox/tor
+mkdir -p ~/.local/share/applications
+mkdir -p ~/.local/bin
+cd ~/.local/share/firefox/tor
+
+wget https://www.torproject.org/dist/torbrowser/13.0.9/tor-browser-linux-x86_64-13.0.9.tar.xz
