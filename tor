@@ -22,3 +22,5 @@ mv ./tmp/tor-browser/Browser/* ./
 rm -R ./tmp
 
 ln -s ~/.local/share/firefox/tor/firefox ~/.local/bin/tor-browser
+
+echo "Finnished up..."
